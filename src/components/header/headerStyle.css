@@ -1,0 +1,13 @@
+header{
+  height:90px;
+  padding:1%;
+  background:#111111;
+  color:#ffffff;
+  display:flex;
+  align-items:center;
+}
+
+h2{
+  font-size:3vw;
+  margin:5%
+}
