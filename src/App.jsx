@@ -1,17 +1,13 @@
-import {Header} from "./components/header"
-import {Apresentacao} from "./components/apresentacao"
-import TILForm from "./components/form"
+import { RouterProvider } from "react-router-dom"
+import router from "./router"
 
 import "./index.css"
  
 const App = () => {
   return (
     <main>
-      <Header/>
-      <div className="container-main">
-         <Apresentacao/>
-         <TILForm/>
-      </div>
+       <RouterProvider router={router} />
+
     </main>
   )
 }

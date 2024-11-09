@@ -66,7 +66,12 @@ const TILForm = () => {
           type="text"
           placeholder="Digite seu email"
           id="email"
-          {...register('email', { required: 'O email é obrigatório' })}
+          {...register('email', { required: 'O email é obrigatório',
+          pattern: {
+            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+            message: "Digite um e-mail válido"
+          }
+          })}
         />
         {errors.email && <p>{errors.email.message}</p>}
       </div>
