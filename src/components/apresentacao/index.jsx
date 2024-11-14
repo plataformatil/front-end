@@ -1,12 +1,9 @@
-import { Link } from "react-router-dom";
-
+import {Button} from "../button"
 import "./style.css"
 const Apresentacao = () =>{
   return (
     <div className="container">
-      <button>
-        <Link to="/login">LOGIN</Link>    
-      </button>
+      <Button name="Entrar"></Button>
     </div>
   )
 }
