@@ -1,10 +1,10 @@
     
   import { Link } from "react-router-dom";
   import "./style.css"
-  const Button = ({name}) =>{
+  const Button = ({name, url}) =>{
     return(
-      <button name={name}>
-        <Link to="/login" style={{color: 'white', fontWeight:'700'}}>{name}</Link>    
+      <button name={name} className="btn-primary">
+        <Link to={url} style={{color: 'white', fontWeight:'700'}}>{name}</Link>    
       </button>
     )
   }

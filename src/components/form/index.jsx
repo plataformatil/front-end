@@ -108,7 +108,7 @@ const TILForm = () => {
       </div>
      <a href="#">Formas de pagamento</a>
       <div className="btn-submit">
-        <button type="submit">Cadastrar</button>
+        <button type="submit" className="btn-btn-submit">Cadastrar</button>
       </div>
     </form>
     <hr />
