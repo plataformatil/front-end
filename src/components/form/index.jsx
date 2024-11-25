@@ -111,7 +111,7 @@ const TILForm = () => {
         <button type="submit" className="btn-btn-submit">Cadastrar</button>
       </div>
     </form>
-    <hr />
+    <hr className="show-mobile"/>
     <p className="termos"><span>Ao cadastrar-se, você concorda com nossos</span>  Termos de privacidade</p>
     </div>
   )

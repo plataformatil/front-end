@@ -1,4 +1,11 @@
 .container-cadastro{
   width:100%;
+  min-height:100vh;
   display:flex;
+}
+
+@media(max-width:1100px){
+  .container-cadastro{
+    flex-direction:column;
+  }
 }

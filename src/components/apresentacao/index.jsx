@@ -7,6 +7,7 @@ const Apresentacao = ({children}) =>{
       <div className="imagem-apresentacao">
         <img src="blocos-apresentaçãodesktop.png" alt="" />
       </div>
+      <h3>Já possui uma conta?</h3>
       {children}
     </div>
   )

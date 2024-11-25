@@ -9,7 +9,7 @@ const LoginPage = () =>{
     <Header/>
     <div className="container-login">
       <Apresentacao>
-        <Button name="Voltar" url="/"/>
+        <Button name="Cadastre-se" url="/"/>
       </Apresentacao>
       <LoginForm/>
     </div>

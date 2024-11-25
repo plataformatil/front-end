@@ -3,7 +3,6 @@ import { useClerk } from "@clerk/clerk-react"
 import "./style.css"
 const HomePage = () =>{
   const {user} = useClerk()
-  console.log(user);
   return(
    <div className="container-home">
      <Home/>

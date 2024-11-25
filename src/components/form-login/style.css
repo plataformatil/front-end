@@ -37,17 +37,72 @@ form .btn-submit{
   width: 100%;
   text-align: center;
 }
+.btn-submit{
+  width: 100%;
+  margin:0 auto;
+}
 .btn-btn-submit {
+  width:44%;
   background-color: #ff6b00;
   color: #fff;
-  padding: 1% 8%;
+  padding: 1% 11%;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 1vw;
+  font-size: 1.3vw;
+  font-weight: bold;
+  margin:5% auto;
   transition: background-color 0.3s;
 } 
 
 .btn-btn-submit:hover {
   background-color: #e65c00;
+}
+
+
+@media (max-width:1100px){
+  .form-container-login{
+    width: 100%;
+  }
+
+  /* .container p {
+    font-size:2.8vw;
+    margin:7% auto 4%;
+  }
+  .container h3{
+    font-size:4vw;
+    margin:0 0 5%;
+  }
+  .form-container h2, .form-container hr{
+    display:none;
+  }
+  form div{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-container{
+    width: 100%;
+    justify-content: center;
+  }
+  label{
+    margin:4% 8%;
+  }
+  input{
+    margin:0 auto;
+  }
+  a{ margin: 0 8%;}
+  .form-container .btn-btn-submit{
+    font-size:2.8vw;
+  }
+  .form-container .termos {
+    width:62%;
+    margin:0 auto;
+    margin-bottom:5%;
+  }
+  .form-container hr.show-mobile{
+    display:block;
+    margin-bottom:3%;
+  } */
 }
