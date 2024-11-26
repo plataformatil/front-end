@@ -1,0 +1,129 @@
+.white-rectangle-two {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 255px;
+  height: 430px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.gear-icon {
+  width: 30px;
+  height: auto;
+  margin-top: 0px;
+  margin-left: 230px;
+}
+
+.image {
+  width: 250px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.cor-label,
+.image-label {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  margin: 0;
+  text-align: center;
+  margin-left: -140px;
+  margin-top: 10px;
+}
+
+.color-overlay,
+.accessory-overlay {
+  position: relative;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-images,
+.accessory-images {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.color-image,
+.accessory-image {
+  width: 25px;
+  height: auto;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .white-rectangle-two {
+    width: 220px;
+    height: 380px;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .gear-icon {
+    margin-left: 160px;
+  }
+
+  .image {
+    width: 200px;
+  }
+
+  .cor-label,
+  .image-label {
+    font-size: 16px;
+    margin-left: -110px;
+  }
+
+  .color-overlay,
+  .accessory-overlay {
+    width: 220px;
+  }
+
+  .color-image,
+  .accessory-image {
+    width: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .white-rectangle-two {
+    width: 180px;
+    height: 350px;
+    top: 55%;
+  }
+
+  .gear-icon {
+    margin-left: 120px;
+  }
+
+  .image {
+    width: 150px;
+  }
+
+  .cor-label,
+  .image-label {
+    font-size: 14px;
+    margin-left: -90px;
+  }
+
+  .color-overlay,
+  .accessory-overlay {
+    width: 180px;
+  }
+
+  .color-image,
+  .accessory-image {
+    width: 15px;
+  }
+}
