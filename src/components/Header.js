@@ -17,10 +17,22 @@ const Header = () => {
         onMouseLeave={() => setIsExpanded(false)}
       >
         <div className="sidebar">
-          <img src={Icon1} alt="Ícone 1" className="sidebar-icon" />
-          <img src={Icon2} alt="Ícone 2" className="sidebar-icon" />
-          <img src={Icon3} alt="Ícone 3" className="sidebar-icon" />
-          <img src={Icon4} alt="Ícone 4" className="sidebar-icon" />
+          <div className="sidebar-item">
+            <img src={Icon1} alt="Ícone 1" className="sidebar-icon" />
+            <span className="sidebar-text">Início</span>
+          </div>
+          <div className="sidebar-item">
+            <img src={Icon2} alt="Ícone 2" className="sidebar-icon" />
+            <span className="sidebar-text">Vagas</span>
+          </div>
+          <div className="sidebar-item">
+            <img src={Icon3} alt="Ícone 3" className="sidebar-icon" />
+            <span className="sidebar-text">Meu Escritório</span>
+          </div>
+          <div className="sidebar-item">
+            <img src={Icon4} alt="Ícone 4" className="sidebar-icon" />
+            <span className="sidebar-text">Sobre a TIL</span>
+          </div>
         </div>
       </div>
     </header>

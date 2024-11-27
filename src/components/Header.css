@@ -10,32 +10,55 @@
 }
 
 .rectangle.expanded {
-  width: 200px;
+  width: 200px; /* Aumenta a largura da barra quando expandida */
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinhamento padrão */
+  align-items: center; /* Ícones alinhados ao centro quando a barra não está expandida */
   gap: 15px;
   position: absolute;
   top: 50px;
-  right: 8px; /* Ajuste para manter mais à direita */
+  right: 0; /* Garante que a sidebar fique alinhada à direita */
   padding: 10px;
-  width: calc(100% - 10px); /* Restrição ao campo laranja */
-  transition: transform 0.3s ease-in-out, align-items 0.3s ease-in-out;
+  width: 100%; /* Garante que a sidebar preencha toda a largura da barra laranja */
+  transition: transform 0.3s ease-in-out;
 }
 
 .rectangle.expanded .sidebar {
-  align-items: flex-start; /* Alinha à esquerda na expansão */
-  transform: translateX(-2px); /* Movimento sutil */
+  align-items: flex-start; /* Alinha os ícones à esquerda quando expandido */
+  transform: translateX(20px); /* Mover os ícones mais para a direita */
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o ícone e o texto */
+  position: relative;
 }
 
 .sidebar-icon {
-  width: 55px;
+  width: 50px;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  opacity: 0; /* Texto invisível inicialmente */
+  visibility: hidden; /* Oculta completamente */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute; /* Coloca o texto à direita do ícone */
+  left: 60px; /* Afastando o texto do ícone */
+}
+
+.rectangle.expanded .sidebar-text {
+  opacity: 1; /* Torna o texto visível */
+  visibility: visible; /* O texto se torna visível apenas quando a barra está expandida */
 }
 
 .header-container {
@@ -73,15 +96,19 @@ body {
   .sidebar {
     top: 30px;
     gap: 10px;
-    right: 6px; /* Ajuste fino */
+    right: 0;
   }
 
-  .rectangle.expanded .sidebar {
-    transform: translateX(-1px); /* Movimento menor */
+  .sidebar-item {
+    gap: 8px;
   }
 
   .sidebar-icon {
     width: 45px;
+  }
+
+  .sidebar-text {
+    font-size: 20px;
   }
 }
 
@@ -98,15 +125,18 @@ body {
   .sidebar {
     top: 20px;
     gap: 8px;
-    padding: 5px;
-    right: 4px; /* Ajuste fino */
+    right: 0;
   }
 
-  .rectangle.expanded .sidebar {
-    transform: translateX(-0.5px); /* Movimento bem discreto */
+  .sidebar-item {
+    gap: 5px;
   }
 
   .sidebar-icon {
     width: 35px;
+  }
+
+  .sidebar-text {
+    font-size: 18px;
   }
 }
