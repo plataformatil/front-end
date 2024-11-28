@@ -28,6 +28,21 @@
   color: #000;
 }
 
+.user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative; /* Permite o uso de z-index nos filhos */
+}
+
+.accessory-image {
+  margin-top: -25px; /* Ajuste para subir o ícone para cima */
+  width: 40px; /* Tamanho do ícone */
+  height: auto;
+  z-index: 1; /* Coloca o ícone na frente, mas sem usar absolute */
+}
+
 @media (max-width: 768px) {
   .white-rectangle {
     width: 180px;
@@ -45,6 +60,7 @@
   .user-name {
     font-size: 18px;
   }
+  
 }
 
 @media (max-width: 480px) {
