@@ -1,64 +1,29 @@
 .blue-rectangle {
-  width: 250px;
-  height: 114px;
+  width: 15vw; /* 20% da largura da viewport */
+  height: auto; /* Ajuste automático com base no conteúdo */
+  max-width: 300px; /* Limita a largura máxima */
   background-color: #0d51ab;
   position: fixed;
   border-radius: 10px;
-  top: 240px;
-  right: 355px;
+  top: 34vh; /* 30% da altura da viewport */
+  right: 23vw; /* 10% da largura da viewport */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  gap: 1rem;
+  padding: 0 1.3rem;
 }
 
 .controle-img {
-  width: 80px;
+  width: 9rem; /* Mantém proporção relativa */
   height: auto;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .blue-rectangle-text {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-@media (max-width: 768px) {
-  .blue-rectangle {
-    width: 200px;
-    height: 100px;
-    top: 200px;
-    right: 20px;
-    padding: 0 8px;
-  }
-
-  .blue-rectangle-text {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .blue-rectangle {
-    width: 160px;
-    height: 90px;
-    top: 160px;
-    right: 10px;
-    padding: 0 6px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .controle-img {
-    width: 60px;
-    margin-left: 0;
-  }
-
-  .blue-rectangle-text {
-    font-size: 12px;
-    margin-right: 0;
-    margin-top: 5px;
-  }
+  font-size: 1rem; /* Tamanho relativo ao padrão */
+  margin-right: 1rem;
 }
