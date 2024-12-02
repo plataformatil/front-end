@@ -1,7 +1,7 @@
 .ajuda-image {
   position: fixed;
-  bottom: 20px;
-  right: 70px;
+  bottom: 2vw; /* Ajuste de 20px para 2% da largura da tela */
+  right: 5vw;  /* Ajuste de 70px para 7% da largura da tela */
   height: auto;
   z-index: 0;
 }

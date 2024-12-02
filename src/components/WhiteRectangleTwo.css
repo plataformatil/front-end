@@ -2,46 +2,46 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 255px;
-  height: 430px;
+  width: 16vw;
+  height: 28vw;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px;
+  padding: 0.6vw;
   position: absolute;
   top: 66%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 10px;
+  border-radius: 1vw;
 }
 
 .gear-icon {
-  width: 30px;
+  width: 2vw;
   height: auto;
   margin-top: 0px;
-  margin-left: 230px;
+  margin-left: 14vw;
 }
 
 .image {
-  width: 250px;
+  width: 25vw;
   height: auto;
-  margin-top: 10px;
+  margin-top: 0.5vw;
 }
 
 .cor-label,
 .image-label {
-  font-size: 18px;
+  font-size: 1.1vw;
   font-family: "Inter", sans-serif;
   color: #000;
   margin: 0;
   text-align: center;
-  margin-left: -140px;
-  margin-top: 10px;
+  margin-left: -12vw;
+  margin-top: 1vh;
 }
 
 .color-overlay,
 .accessory-overlay {
   position: relative;
-  width: 250px;
+  width: 10vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,14 +50,14 @@
 .color-images,
 .accessory-images {
   position: absolute;
-  top: 10px;
+  top: 1vh;
   display: flex;
-  gap: 5px;
+  gap: 1vw;
 }
 
 .color-image,
 .accessory-image {
-  width: 25px;
+  width: 1.4vw;
   height: auto;
-  margin: 10px;
+  margin: 1.2vh;
 }
