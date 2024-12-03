@@ -1,38 +1,38 @@
 .user-greeting {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1vw;
   font-size: 1.1em;
   position: relative;
 }
 
 .user-greeting-text {
   position: absolute;
-  top: 55px;
-  left: 250px;
+  top: 4vw;
+  left: 16vw;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 7vh;
   color: #ffffff;
 }
 
 .profile-button {
   position: absolute;
-  top: 60px;
-  left: 900px;
+  top: 10vh;
+  left: 58vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 8px 12px;
-  width: 280px;
-  height: 45px;
-  border: 1px solid white;
+  gap: 2vw;
+  padding: 0,8vh 1.2vw;
+  width: 19vw;
+  height: 7vh;
+  border: 0.1vh solid white;
   background-color: transparent;
   color: white;
-  border-radius: 5px;
+  border-radius: 0.5vh;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 3vh;
   font-family: "Inter", sans-serif;
   font-weight: bold;
 }
