@@ -1,3 +1,4 @@
+/* Estilo da barra laranja */
 .rectangle {
   width: 80px;
   height: 783px;
@@ -13,28 +14,29 @@
   width: 200px; /* Aumenta a largura da barra quando expandida */
 }
 
+/* Estilo da sidebar */
 .sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Ícones alinhados ao centro quando a barra não está expandida */
+  align-items: center;
   gap: 15px;
   position: absolute;
   top: 50px;
-  right: 0; /* Garante que a sidebar fique alinhada à direita */
+  right: 0;
   padding: 10px;
   width: 100%; /* Garante que a sidebar preencha toda a largura da barra laranja */
   transition: transform 0.3s ease-in-out;
 }
 
 .rectangle.expanded .sidebar {
-  align-items: flex-start; /* Alinha os ícones à esquerda quando expandido */
-  transform: translateX(20px); /* Mover os ícones mais para a direita */
+  align-items: flex-start;
+  transform: translateX(20px);
 }
 
 .sidebar-item {
   display: flex;
   align-items: center;
-  gap: 10px; /* Espaço entre o ícone e o texto */
+  gap: 10px;
   position: relative;
 }
 
@@ -49,18 +51,19 @@
   font-size: 12px;
   font-weight: bold;
   color: white;
-  opacity: 0; /* Texto invisível inicialmente */
-  visibility: hidden; /* Oculta completamente */
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s ease-in-out;
-  position: absolute; /* Coloca o texto à direita do ícone */
-  left: 60px; /* Afastando o texto do ícone */
+  position: absolute;
+  left: 60px;
 }
 
 .rectangle.expanded .sidebar-text {
-  opacity: 1; /* Torna o texto visível */
-  visibility: visible; /* O texto se torna visível apenas quando a barra está expandida */
+  opacity: 1;
+  visibility: visible;
 }
 
+/* Estilo do cabeçalho */
 .header-container {
   background-color: black;
   width: 100vw;
@@ -81,4 +84,31 @@ body {
   color: white;
   font-size: 48px;
   margin: 0;
+}
+
+/* Media Query para telas menores que 421px */
+@media (max-width: 421px) {
+  /* Faz a barra laranja desaparecer em telas pequenas */
+  .rectangle {
+    width: 0; /* A largura da barra laranja vai para 0 */
+  }
+
+  /* Faz a sidebar desaparecer */
+  .sidebar {
+    display: none; /* Esconde a sidebar */
+  }
+
+  .header-container {
+    height: 60px; /* Reduz a altura do header */
+    padding-left: 10px; /* Ajusta o padding */
+  }
+
+  .title {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Faz o título ocupar toda a largura disponível */
+  }
+  
 }

@@ -37,8 +37,10 @@
 }
 
 .accessory-image {
+  
   margin-top: 0vh; /* Ajuste para subir o ícone para cima */
   width: 1vw; /* Tamanho do ícone */
   height: auto;
   z-index: 1; /* Coloca o ícone na frente, mas sem usar absolute */
+
 }
