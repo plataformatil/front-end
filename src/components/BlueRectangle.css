@@ -5,7 +5,7 @@
   background-color: #0d51ab;
   position: fixed;
   border-radius: 10px;
-  top: 34vh; /* 30% da altura da viewport */
+  top: 31vh; /* 30% da altura da viewport */
   right: 23vw; /* 10% da largura da viewport */
   display: flex;
   justify-content: space-between;
