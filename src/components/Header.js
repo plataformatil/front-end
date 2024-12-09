@@ -4,6 +4,8 @@ import Icon1 from "../assets/icon1.png";
 import Icon2 from "../assets/icon2.png";
 import Icon3 from "../assets/icon3.png";
 import Icon4 from "../assets/icon4.png";
+import MobileIconMsg from "../assets/msg.png"; // Ícone de mensagem
+import MobileIconConfig from "../assets/config.png"; // Ícone de configuração
 
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -35,6 +37,9 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {/* Ícones visíveis apenas no mobile */}
+      <img src={MobileIconMsg} alt="Mensagem" className="mobile-icon left-icon" />
+      <img src={MobileIconConfig} alt="Configuração" className="mobile-icon right-icon" />
     </header>
   );
 };
