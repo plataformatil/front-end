@@ -40,3 +40,84 @@
 .profile-button .icon {
   font-size: 1em;
 }
+
+/* Estilos gerais */
+.hamburger-menu {
+  position: absolute;
+  right: 2vw; /* Coloca o hambúrguer no lado direito */
+  top: 2vh; /* Ajuste a altura conforme necessário */
+  cursor: pointer;
+  display: none; /* Esconde o hambúrguer por padrão */
+}
+
+.hamburger-icon {
+  font-size: 1em;
+  color: white;
+}
+
+/* Menu Lateral */
+.side-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px; /* Largura do menu lateral */
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-menu li {
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.side-menu li:hover {
+  background-color: #444;
+}
+
+/* Media query para telas pequenas - exibe o hambúrguer e oculta o botão de configurações */
+@media (max-width: 421px) {
+  .hamburger-menu {
+    display: block; /* Exibe o hambúrguer em telas pequenas */
+  }
+
+  .profile-button {
+    display: none; /* Esconde o botão "Configurar Perfil" em telas pequenas */
+  }
+
+  .side-menu {
+    width: 200px; /* Ajusta a largura do menu lateral em telas pequenas */
+  }
+}
+
+
+/* Para larguras menores */
+@media (max-width: 421px) {
+  .profile-button {
+    display: none !important;
+  }
+}
+
+/* Para alturas menores */
+@media (max-height: 90px) {
+  .profile-button {
+    display: none !important;
+  }
+}
+
+@media (max-width: 421px) {
+  .user-greeting-text {
+    font-size: 4vh; /* Menor fonte para telas pequenas */
+    left: 5vw; /* Ajuste para mover mais para a esquerda */
+  }
+}
