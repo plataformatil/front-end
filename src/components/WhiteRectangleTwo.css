@@ -61,3 +61,10 @@
   height: auto;
   margin: 1.2vh;
 }
+
+/* Responsivo - Ocultar .white-rectangle-two em telas pequenas */
+@media (max-width: 350.84px), (max-height: 217px) {
+  .white-rectangle-two {
+    display: none; /* Oculta o elemento */
+  }
+}

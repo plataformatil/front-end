@@ -27,3 +27,10 @@
   font-size: 1rem; /* Tamanho relativo ao padrão */
   margin-right: 1rem;
 }
+
+/* Responsivo - Ocultar o .blue-rectangle em telas pequenas */
+@media (max-width: 342px), (max-height: 556px) {
+  .blue-rectangle {
+    display: none; /* Oculta o elemento */
+  }
+}

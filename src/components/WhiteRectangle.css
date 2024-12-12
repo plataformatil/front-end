@@ -44,3 +44,10 @@
   z-index: 1; /* Coloca o ícone na frente, mas sem usar absolute */
 
 }
+
+/* Responsivo - Ocultar .white-rectangle em telas pequenas */
+@media (max-width: 350.84px), (max-height: 217px) {
+  .white-rectangle {
+    display: none; /* Oculta o elemento */
+  }
+}

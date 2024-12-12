@@ -35,3 +35,59 @@
 .square p:last-child {
   font-size: 2vh;
 }
+
+@media (max-width: 350.84px), (max-height: 217px) {
+  .orange-rectangle {
+    display: flex;
+    flex-direction: column; /* Organiza o título no topo e os quadrados abaixo */
+    justify-content: flex-start; /* Alinha o conteúdo no topo */
+    align-items: center;
+    background-color: #f46720;
+    border-radius: 1vh;
+    width: 75%; /* Diminui a largura da área laranja */
+    height: auto;
+    padding: 1.5vh;
+    margin: 0 auto;
+    margin-top: 3vh; /* Ajuste para não ficar tão em cima */
+  }
+
+  /* Estilo para o título "Resumo semanal" */
+  .orange-rectangle > .resumo-semanal {
+    text-align: center;
+    font-size: 1.5vh; /* Fonte menor para o título */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2vh; /* Espaço abaixo do título */
+  }
+
+  /* Ajuste para garantir que os quadrados fiquem lado a lado */
+  .orange-rectangle {
+    display: flex;
+    flex-wrap: nowrap; /* Garante que os quadrados fiquem lado a lado sem quebrar linha */
+    justify-content: space-between; /* Espaçamento entre os quadrados */
+  }
+
+  /* Estilo para os quadrados brancos */
+  .square {
+    width: 28%; /* Ajusta a largura dos quadrados para ficarem mais estreitos */
+    height: 12vh; /* Altura ajustada para os quadrados */
+    background-color: white;
+    margin: 0.5vh; /* Espaço entre os quadrados */
+    border-radius: 0.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1vh;
+  }
+
+  /* Ajuste nos textos dentro dos quadrados */
+  .square p {
+    margin: 0.3vh 0;
+    font-size: 1.3vh;
+    color: #f46720;
+  }
+  
+}
+

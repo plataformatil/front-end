@@ -41,3 +41,11 @@
   color: white;
   margin-left: 1vw;
 }
+
+/* Responsivo - Ocultar .right-white-rectangle em telas pequenas */
+@media (max-width: 350.84px), (max-height: 217px) {
+  .right-white-rectangle {
+    display: none; /* Oculta o elemento */
+  }
+}
+
