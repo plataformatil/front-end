@@ -39,40 +39,36 @@
 @media (max-width: 350.84px), (max-height: 217px) {
   .orange-rectangle {
     display: flex;
-    flex-direction: column; /* Organiza o título no topo e os quadrados abaixo */
-    justify-content: flex-start; /* Alinha o conteúdo no topo */
-    align-items: center;
+    flex-direction: row; /* Alinha os quadrados lado a lado */
+    flex-wrap: nowrap; /* Permite que os quadrados quebrem para a linha seguinte, se necessário */
+    justify-content: space-between; /* Espaçamento igual entre os quadrados */
+    align-items: center; /* Alinha os itens ao centro */
     background-color: #f46720;
     border-radius: 1vh;
-    width: 75%; /* Diminui a largura da área laranja */
+    width: 90%; /* Ajusta a largura do retângulo */
     height: auto;
     padding: 1.5vh;
     margin: 0 auto;
-    margin-top: 3vh; /* Ajuste para não ficar tão em cima */
+    margin-top: 10vh;
   }
 
   /* Estilo para o título "Resumo semanal" */
   .orange-rectangle > .resumo-semanal {
     text-align: center;
-    font-size: 1.5vh; /* Fonte menor para o título */
+    font-size: 1.5vh; /* Fonte menor */
     font-weight: bold;
     color: white;
     margin-bottom: 2vh; /* Espaço abaixo do título */
-  }
-
-  /* Ajuste para garantir que os quadrados fiquem lado a lado */
-  .orange-rectangle {
-    display: flex;
-    flex-wrap: nowrap; /* Garante que os quadrados fiquem lado a lado sem quebrar linha */
-    justify-content: space-between; /* Espaçamento entre os quadrados */
+    width: 100%; /* Garante que o título ocupe a largura toda */
   }
 
   /* Estilo para os quadrados brancos */
   .square {
-    width: 28%; /* Ajusta a largura dos quadrados para ficarem mais estreitos */
-    height: 12vh; /* Altura ajustada para os quadrados */
+    width: 20%; /* Ajusta os quadrados para ficarem lado a lado */
+    min-width: 50px; /* Impede que fiquem muito estreitos */
+    height: 11vh; /* Define a altura dos quadrados */
     background-color: white;
-    margin: 0.5vh; /* Espaço entre os quadrados */
+    margin: 0.4vh; /* Espaço entre os quadrados */
     border-radius: 0.5vh;
     display: flex;
     flex-direction: column;
@@ -88,6 +84,4 @@
     font-size: 1.3vh;
     color: #f46720;
   }
-  
 }
-
