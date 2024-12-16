@@ -28,9 +28,28 @@
   margin-right: 1rem;
 }
 
-/* Responsivo - Ocultar o .blue-rectangle em telas pequenas */
 @media (max-width: 342px), (max-height: 556px) {
   .blue-rectangle {
-    display: none; /* Oculta o elemento */
+    width: 90%; /* Largura igual à do .orange-rectangle */
+    height: 6vh; /* Altura menor */
+    padding: 0.6rem; /* Reduz o espaçamento interno */
+    position: relative;
+    top: 2vh; /* Ajusta a distância para ficar logo abaixo do .orange-rectangle */
+    margin-left: 26%; /* Move o .blue-rectangle para a direita */
+    margin-right: 5%; /* Garante que não saia da tela */
+    display: flex; /* Adiciona flexbox */
+    justify-content: center; /* Centraliza conteúdo dentro */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+  }
+
+  .controle-img {
+    width: 3rem; /* Reduz o tamanho da imagem */
+    height: auto;
+    margin-left: 0.5rem; /* Menor margem */
+  }
+
+  .blue-rectangle-text {
+    font-size: 0.8rem; /* Texto menor */
+    margin-right: 0.5rem; /* Menor margem */
   }
 }
