@@ -62,9 +62,55 @@
   margin: 1.2vh;
 }
 
-/* Responsivo - Ocultar .white-rectangle-two em telas pequenas */
-@media (max-width: 350.84px), (max-height: 217px) {
+/* Responsivo para telas menores */
+@media (max-width: 400px) {
   .white-rectangle-two {
-    display: none; /* Oculta o elemento */
+    width: 88vw; /* Mais largo em telas pequenas */
+    height: 16vh; /* Altura proporcional baseada na altura da tela */
+    padding: 2vw;
+    border-radius: 2vw; /* Arredondamento suave */
+    top: 88%; /* Desce mais */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+  }
+
+  /* Contêiner para alinhar o ícone e o texto */
+  .label-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens (ícone e texto) */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 1vw; /* Espaço entre o ícone e o texto */
+  }
+
+  .gear-icon {
+    width: 3vw; /* Ajuste o tamanho do ícone */
+    height: auto;
+  }
+
+  .cor-label,
+  .image-label {
+    font-size: 3vw; /* Aumenta o tamanho da fonte */
+    margin: 0;
+  }
+
+  .image {
+    width: 39vw; /* Aumenta o tamanho da imagem */
+    margin-top: 0.5vh;
+  }
+
+  .color-overlay,
+  .accessory-overlay {
+    width: 15vw; /* Aumenta a largura dos overlays */
+  }
+
+  .color-images,
+  .accessory-images {
+    gap: 1vw; /* Aumenta o espaçamento entre as imagens */
+  }
+
+  .color-image,
+  .accessory-image {
+    width: 3vw; /* Aumenta o tamanho das imagens */
+    margin: 1vh;
   }
 }

@@ -1,3 +1,4 @@
+/* Estilos padrão */
 .white-rectangle {
   display: flex;
   flex-direction: column;
@@ -33,21 +34,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  position: relative; /* Permite o uso de z-index nos filhos */
+  position: relative;
 }
 
 .accessory-image {
-  
-  margin-top: 0vh; /* Ajuste para subir o ícone para cima */
-  width: 1vw; /* Tamanho do ícone */
+  margin-top: 0vh;
+  width: 1vw;
   height: auto;
-  z-index: 1; /* Coloca o ícone na frente, mas sem usar absolute */
-
+  z-index: 1;
 }
 
-/* Responsivo - Ocultar .white-rectangle em telas pequenas */
-@media (max-width: 350.84px), (max-height: 217px) {
+@media (max-width: 400px) {
   .white-rectangle {
-    display: none; /* Oculta o elemento */
+    width: 90vw; /* Mais largo em telas pequenas */
+    height: 25vh; /* Altura proporcional */
+    padding: 1vw;
+    border-radius: 2vw; /* Arredondamento suave */
+    top: 65%; /* Desce um pouco */
+    left: 50%; /* Vai um pouco para a direita */
+    transform: translate(-50%, -50%); /* Mantém o centro relativo */
+  }
+
+  .user-image {
+    width: 20vw; /* Dimensão reduzida */
+    margin-bottom: 0vh; /* Espaçamento menor */
+  }
+
+  .user-name {
+    font-size: 3vw; /* Tamanho ajustado */
+  }
+
+  .accessory-image {
+    width: 12vw; /* Proporção ajustada */
   }
 }
