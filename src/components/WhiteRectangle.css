@@ -3,68 +3,84 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 13vw;
-  height: 61vh;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0.6vw;
-  position: absolute;
-  top: 63%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  border-radius: 1vw;
-}
-
-.user-image {
-  width: 10vw;
-  height: auto;
-  margin-bottom: 5vh;
-}
-
-.user-name {
-  font-size: 1vw;
-  padding-bottom: 0px;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  color: #000;
+  width: 13vw; /* Largura do retângulo em 13% da largura da tela */
+  height: 61vh; /* Altura do retângulo em 61% da altura da tela */
+  align-items: center; /* Alinha os itens no centro horizontalmente */
+  justify-content: flex-end; /* Alinha os itens no final verticalmente */
+  padding: 0.6vw; /* Padding de 0.6% da largura da tela */
+  position: absolute; /* Posicionamento absoluto */
+  top: 63%; /* Posiciona a 63% da altura da tela */
+  left: 35%; /* Posiciona a 35% da largura da tela */
+  transform: translate(-50%, -50%); /* Ajusta o elemento para centralizar */
+  border-radius: 1vw; /* Bordas arredondadas com raio de 1% da largura da tela */
 }
 
 .user-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
+  align-items: center; /* Alinha os itens no centro horizontalmente */
+  justify-content: flex-end; /* Alinha os itens no final verticalmente */
+  position: relative; /* Necessário para o ícone de acessório ser posicionado sobre a imagem */
+}
+
+.user-image {
+  width: 10vw; /* Largura da imagem do usuário em 10% da largura da tela */
+  height: auto; /* Altura automática, mantendo a proporção da imagem */
+  margin-bottom: 5vh; /* Margem inferior de 5% da altura da tela */
 }
 
 .accessory-image {
-  margin-top: 0vh;
-  width: 1vw;
-  height: auto;
-  z-index: 1;
+  top: -2vw; /* Ajuste vertical para sobrepor a imagem */
+  width: 4vw; /* Largura do ícone de acessório em 4% da largura da tela */
+  height: auto; /* Altura automática, mantendo a proporção do ícone */
+  z-index: 3; /* Garante que o ícone sobreponha a imagem */
+}
+
+.user-name {
+  font-size: 1vw; /* Tamanho da fonte ajustado para 1% da largura da tela */
+  padding-bottom: 0px; /* Remove a margem inferior */
+  font-family: "Inter", sans-serif; /* Define a fonte Inter */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  color: #000; /* Cor do texto como preto */
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinha os itens no centro horizontalmente */
+  justify-content: flex-end; /* Alinha os itens no final verticalmente */
+  position: relative; /* Necessário para o ícone de acessório ser posicionado sobre a imagem */
+}
+
+.accessory-image {
+  margin-top: 0vh; /* Ajuste de margem superior */
+  width: 1vw; /* Largura do ícone de acessório ajustada para 1% da largura da tela */
+  height: auto; /* Altura automática, mantendo a proporção do ícone */
+  z-index: 1; /* Garante que o ícone esteja abaixo da imagem */
 }
 
 @media (max-width: 400px) {
+  /* Estilos para telas menores que 400px de largura */
   .white-rectangle {
-    width: 90vw; /* Mais largo em telas pequenas */
-    height: 25vh; /* Altura proporcional */
-    padding: 1vw;
-    border-radius: 2vw; /* Arredondamento suave */
-    top: 65%; /* Desce um pouco */
-    left: 50%; /* Vai um pouco para a direita */
+    width: 90vw; /* Largura maior em telas pequenas */
+    height: 25vh; /* Altura proporcionalmente menor */
+    padding: 1vw; /* Padding ajustado */
+    border-radius: 2vw; /* Bordas mais arredondadas */
+    top: 65%; /* Posiciona mais baixo em telas pequenas */
+    left: 50%; /* Alinha horizontalmente no meio */
     transform: translate(-50%, -50%); /* Mantém o centro relativo */
   }
 
   .user-image {
-    width: 20vw; /* Dimensão reduzida */
-    margin-bottom: 0vh; /* Espaçamento menor */
+    width: 20vw; /* Aumenta a largura da imagem do usuário */
+    margin-bottom: 0vh; /* Remove a margem inferior */
   }
 
   .user-name {
-    font-size: 3vw; /* Tamanho ajustado */
+    font-size: 3vw; /* Aumenta o tamanho da fonte */
   }
 
   .accessory-image {
-    width: 12vw; /* Proporção ajustada */
+    width: 12vw; /* Ajusta a largura do ícone de acessório */
   }
 }

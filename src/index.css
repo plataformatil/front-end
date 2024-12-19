@@ -1,13 +1,21 @@
+/* Define o estilo geral para o corpo da página */
 body {
+  /* Remove as margens padrão do navegador */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  
+  /* Define a família de fontes a ser utilizada no corpo da página, com uma lista de fontes alternativas */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+  /* Aplica suavização de fontes para que as fontes fiquem mais nítidas em dispositivos Apple */
   -webkit-font-smoothing: antialiased;
+
+  /* Aplica suavização de fontes para navegadores Mozilla (como o Firefox) */
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Define o estilo para o elemento de código */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* Define a família de fontes para o texto dentro de elementos <code>, usando fontes específicas para código */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

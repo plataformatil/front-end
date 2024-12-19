@@ -1,55 +1,61 @@
+/* Estilos para o retângulo azul */
 .blue-rectangle {
-  width: 15vw; /* 20% da largura da viewport */
-  height: auto; /* Ajuste automático com base no conteúdo */
-  max-width: 300px; /* Limita a largura máxima */
-  background-color: #0d51ab;
-  position: fixed;
-  border-radius: 10px;
-  top: 31vh; /* 30% da altura da viewport */
-  right: 23vw; /* 10% da largura da viewport */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 0 1.3rem;
+  width: 15vw; /* 15% da largura da viewport (tela) */
+  height: auto; /* Ajuste automático da altura conforme o conteúdo */
+  max-width: 300px; /* Limita a largura máxima do retângulo a 300px */
+  background-color: #0d51ab; /* Define a cor de fundo como azul */
+  position: fixed; /* A posição é fixa na tela, ou seja, não se move com o rolar da página */
+  border-radius: 10px; /* Bordas arredondadas com raio de 10px */
+  top: 31vh; /* 31% da altura da viewport (posiciona o retângulo em 31% da altura da tela) */
+  right: 23vw; /* 23% da largura da viewport (posiciona o retângulo à direita) */
+  display: flex; /* Usa flexbox para organizar os itens dentro do contêiner */
+  justify-content: space-between; /* Espaça o conteúdo de forma igual entre os itens */
+  align-items: center; /* Alinha o conteúdo verticalmente no centro */
+  gap: 1rem; /* Espaçamento de 1rem entre os itens dentro do retângulo */
+  padding: 0 1.3rem; /* Padding (espaçamento interno) à esquerda e à direita de 1.3rem */
 }
 
+/* Estilos para a imagem dentro do retângulo azul */
 .controle-img {
-  width: 9rem; /* Mantém proporção relativa */
-  height: auto;
-  margin-left: 1rem;
+  width: 9rem; /* Largura da imagem definida em rem (9rem) */
+  height: auto; /* A altura da imagem será ajustada automaticamente para manter a proporção */
+  margin-left: 1rem; /* Espaçamento à esquerda de 1rem */
 }
 
+/* Estilos para o texto dentro do retângulo azul */
 .blue-rectangle-text {
-  color: white;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 1rem; /* Tamanho relativo ao padrão */
-  margin-right: 1rem;
+  color: white; /* Cor do texto definida como branca */
+  font-family: "Inter", sans-serif; /* Fonte do texto definida como Inter, com fallback para sans-serif */
+  font-weight: 600; /* Peso da fonte definido como 600 (semi-negrito) */
+  font-size: 1rem; /* Tamanho do texto relativo a 1rem */
+  margin-right: 1rem; /* Espaçamento à direita de 1rem */
 }
 
+/* Estilos responsivos para telas pequenas */
 @media (max-width: 342px), (max-height: 556px) {
+  /* Quando a largura da tela for menor que 342px ou a altura menor que 556px */
+  
   .blue-rectangle {
-    width: 90%; /* Largura igual à do .orange-rectangle */
-    height: 6vh; /* Altura menor */
-    padding: 0.6rem; /* Reduz o espaçamento interno */
-    position: relative;
-    top: 2vh; /* Ajusta a distância para ficar logo abaixo do .orange-rectangle */
-    margin-left: 26%; /* Move o .blue-rectangle para a direita */
-    margin-right: 5%; /* Garante que não saia da tela */
-    display: flex; /* Adiciona flexbox */
-    justify-content: center; /* Centraliza conteúdo dentro */
-    align-items: center; /* Alinha o conteúdo verticalmente */
+    width: 90%; /* O retângulo azul ocupa 90% da largura da tela em dispositivos menores */
+    height: 6vh; /* Altura do retângulo reduzida para 6% da altura da viewport */
+    padding: 0.6rem; /* Padding reduzido para 0.6rem */
+    position: relative; /* A posição passa a ser relativa ao contêiner pai */
+    top: 2vh; /* O retângulo fica 2% da altura da tela abaixo de sua posição original */
+    margin-left: 26%; /* Move o retângulo para a direita (26% da largura da tela) */
+    margin-right: 5%; /* Garante que o retângulo não ultrapasse a tela */
+    display: flex; /* Usa flexbox para o layout interno */
+    justify-content: center; /* Centraliza o conteúdo dentro do retângulo */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
   }
 
   .controle-img {
-    width: 3rem; /* Reduz o tamanho da imagem */
-    height: auto;
-    margin-left: 0.5rem; /* Menor margem */
+    width: 3rem; /* Reduz o tamanho da imagem para 3rem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 0.5rem; /* Diminui a margem esquerda para 0.5rem */
   }
 
   .blue-rectangle-text {
-    font-size: 0.8rem; /* Texto menor */
-    margin-right: 0.5rem; /* Menor margem */
+    font-size: 0.8rem; /* Reduz o tamanho do texto para 0.8rem */
+    margin-right: 0.5rem; /* Diminui a margem à direita para 0.5rem */
   }
 }

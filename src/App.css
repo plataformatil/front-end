@@ -1,14 +1,23 @@
 .App {
   text-align: center;
+  /* Define o alinhamento do texto dentro da classe `.App` para o centro, afetando todo o conteúdo dentro dessa classe */
 }
 
 .rectangle-container {
   display: flex;
+  /* Usa o modelo de layout Flexbox para a `.rectangle-container`, permitindo uma distribuição flexível dos elementos filhos */
+  
   justify-content: center;
+  /* Alinha os elementos filhos da `.rectangle-container` ao centro horizontalmente */
+  
   margin-top: 20px;
+  /* Adiciona uma margem superior de 20px à `.rectangle-container` para separar visualmente do conteúdo acima */
 }
 
 .App-logo {
   height: 40vmin;
+  /* Define a altura do elemento com a classe `.App-logo` como 40% da menor dimensão da janela de visualização (altura ou largura) */
+  
   pointer-events: none;
+  /* Desativa a interação do mouse ou outros eventos de ponteiro com o `.App-logo` (ou seja, não será possível clicar ou interagir com ele) */
 }

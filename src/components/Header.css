@@ -1,109 +1,116 @@
 /* Estilo da barra laranja */
 .rectangle {
-  width: 5vw;
-  height: 100vh;
-  background-color: #f46720;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: width 0.3s ease-in-out;
-  z-index: 2;
+  width: 5vw; /* Define a largura inicial da barra como 5% da largura da viewport */
+  height: 100vh; /* Define a altura da barra como 100% da altura da viewport */
+  background-color: #f46720; /* Define a cor de fundo da barra como laranja */
+  position: absolute; /* A barra é posicionada de forma absoluta, em relação ao contêiner pai */
+  right: 0; /* Posiciona a barra no lado direito da tela */
+  top: 0; /* Posiciona a barra no topo da tela */
+  transition: width 0.3s ease-in-out; /* Aplica uma transição suave para a mudança da largura */
+  z-index: 2; /* Garante que a barra fique acima de outros elementos */
 }
 
 .rectangle.expanded {
-  width: 20vw; /* Aumenta a largura da barra quando expandida */
+  width: 20vw; /* Aumenta a largura da barra quando ela estiver expandida (20% da largura da viewport) */
 }
 
 /* Estilo da sidebar */
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2vh;
-  position: absolute;
-  top: 5vh;
-  right: 0;
-  padding: 0.6vw;
-  width: 100%; /* Garante que a sidebar preencha toda a largura da barra laranja */
-  transition: transform 0.3s ease-in-out;
+  display: flex; /* A sidebar usa flexbox para distribuir seus itens de forma flexível */
+  flex-direction: column; /* Organiza os itens da sidebar de forma vertical */
+  align-items: center; /* Alinha os itens ao centro */
+  gap: 2vh; /* Adiciona um espaçamento de 2vh entre os itens da sidebar */
+  position: absolute; /* A sidebar é posicionada de forma absoluta dentro da barra laranja */
+  top: 5vh; /* Posiciona a sidebar 5vh abaixo do topo */
+  right: 0; /* Posiciona a sidebar no lado direito */
+  padding: 0.6vw; /* Aplica um preenchimento de 0.6vw dentro da sidebar */
+  width: 100%; /* Faz a sidebar ocupar 100% da largura disponível da barra laranja */
+  transition: transform 0.3s ease-in-out; /* Aplica uma transição suave para as mudanças na posição */
 }
 
 .rectangle.expanded .sidebar {
-  align-items: flex-start;
-  transform: translateX(2vw);
+  align-items: flex-start; /* Quando a barra estiver expandida, os itens da sidebar vão se alinhar à esquerda */
+  transform: translateX(2vw); /* Move a sidebar para a esquerda, criando um efeito de deslize */
 }
 
+/* Estilo dos itens da sidebar */
 .sidebar-item {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-  position: relative;
+  display: flex; /* Os itens da sidebar também usam flexbox */
+  align-items: center; /* Alinha o ícone e o texto ao centro */
+  gap: 1vw; /* Adiciona um espaçamento de 1vw entre o ícone e o texto */
+  position: relative; /* A posição dos itens é relativa para que o texto possa ser posicionado dentro de cada item */
 }
 
+/* Estilo dos ícones da sidebar */
 .sidebar-icon {
-  width: 3vw;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  width: 3vw; /* Define a largura do ícone como 3% da largura da viewport */
+  height: auto; /* A altura do ícone é ajustada automaticamente para manter a proporção */
+  cursor: pointer; /* Define o cursor como um ponteiro para indicar que é interativo */
+  transition: transform 0.3s ease-in-out; /* Aplica uma transição suave para qualquer transformação no ícone */
 }
 
+/* Estilo do texto na sidebar */
 .sidebar-text {
-  font-size: 1vw;
-  font-weight: bold;
-  color: white;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out;
-  position: absolute;
-  left: 5vw;
+  font-size: 1vw; /* Define o tamanho da fonte do texto como 1% da largura da viewport */
+  font-weight: bold; /* Define o texto como negrito */
+  color: white; /* A cor do texto é branca */
+  opacity: 0; /* O texto começa invisível */
+  visibility: hidden; /* O texto começa oculto */
+  transition: opacity 0.3s ease-in-out; /* Aplica uma transição suave para tornar o texto visível */
+  position: absolute; /* Posiciona o texto de forma absoluta dentro de cada item da sidebar */
+  left: 5vw; /* Posiciona o texto 5vw à esquerda do ícone */
 }
 
 .rectangle.expanded .sidebar-text {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1; /* Quando a barra estiver expandida, o texto fica visível */
+  visibility: visible; /* O texto fica visível quando a barra está expandida */
 }
 
 /* Estilo do cabeçalho */
 .header-container {
-  background-color: black;
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  padding-left: 1vw;
-  position: relative;
-  z-index: 3;
+  background-color: black; /* Define o fundo do cabeçalho como preto */
+  width: 100vw; /* Faz o cabeçalho ocupar toda a largura da viewport */
+  height: 10vh; /* Define a altura do cabeçalho como 10% da altura da viewport */
+  display: flex; /* O cabeçalho usa flexbox para alinhar seus itens */
+  align-items: center; /* Alinha os itens do cabeçalho ao centro verticalmente */
+  padding-left: 1vw; /* Aplica um preenchimento de 1vw à esquerda */
+  position: relative; /* Define a posição relativa para permitir que os elementos dentro do cabeçalho sejam posicionados de forma absoluta */
+  z-index: 3; /* Garante que o cabeçalho fique acima da barra laranja */
 }
 
+/* Estilo do body */
 body {
-  background-color: #000036;
-  overflow: hidden;
+  background-color: #000036; /* Define o fundo da página como um tom escuro de azul */
+  overflow: hidden; /* Impede o aparecimento de barras de rolagem */
 }
 
+/* Estilo do título */
 .title {
-  color: white;
-  font-size: 5vh;
-  margin: 0;
-  padding-left: 0;
+  color: white; /* Define a cor do título como branca */
+  font-size: 5vh; /* Define o tamanho do título como 5% da altura da viewport */
+  margin: 0; /* Remove a margem do título */
+  padding-left: 0; /* Remove o preenchimento à esquerda */
 }
 
 /* Estilo dos ícones visíveis apenas no mobile */
 .mobile-icon {
   display: none; /* Esconde os ícones por padrão */
-  width: 10vw;
-  height: auto;
-  position: absolute;
-  top: 3vh;
-  cursor: pointer;
-  z-index: 4; /* Para garantir que fiquem visíveis acima de outros elementos */
+  width: 10vw; /* Define a largura do ícone como 10% da largura da viewport */
+  height: auto; /* A altura do ícone é ajustada automaticamente */
+  position: absolute; /* Posiciona os ícones de forma absoluta dentro da tela */
+  top: 3vh; /* Posiciona os ícones 3vh abaixo do topo da tela */
+  cursor: pointer; /* Define o cursor como um ponteiro para indicar que é interativo */
+  z-index: 4; /* Garante que os ícones fiquem visíveis acima de outros elementos */
 }
 
+/* Ícone do lado esquerdo */
 .left-icon {
-  left: 2vw; /* Ícone de mensagem no lado esquerdo */
+  left: 2vw; /* Posiciona o ícone de mensagem 2vw à esquerda */
 }
 
+/* Ícone do lado direito */
 .right-icon {
-  right: 3vw; /* Ícone de configuração no lado direito */
+  right: 3vw; /* Posiciona o ícone de configuração 3vw à direita */
 }
 
 /* Responsividade para telas menores */
@@ -113,17 +120,16 @@ body {
   }
 
   .header-container {
-    height: 11vh; /* Ajusta a altura do cabeçalho para mobile */
-    position: relative;
+    height: 11vh; /* Ajusta a altura do cabeçalho para telas menores */
+    position: relative; /* Posiciona o cabeçalho de forma relativa */
   }
 
   .title {
-    font-size: 8vh; /* Reduz o tamanho do título */
+    font-size: 8vh; /* Reduz o tamanho do título para telas pequenas */
     margin: 0 auto; /* Centraliza o título */
   }
 
   .rectangle, .sidebar {
-    display: none; /* Esconde a barra laranja e a sidebar no mobile */
+    display: none; /* Esconde a barra laranja e a sidebar no modo mobile */
   }
 }
-

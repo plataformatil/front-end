@@ -1,116 +1,109 @@
+/* WhiteRectangleTwo.css */
+
+/* Estilos do WhiteRectangleTwo */
 .white-rectangle-two {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 16vw;
-  height: 28vw;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0.6vw;
-  position: absolute;
-  top: 63%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 1vw;
+  display: flex; /* Utiliza o modelo flexbox para organizar os itens */
+  flex-direction: column; /* Organiza os itens em coluna */
+  background-color: white; /* Define o fundo como branco */
+  width: 16vw; /* Largura de 16% da largura da janela de visualização */
+  height: 28vw; /* Altura de 28% da largura da janela de visualização */
+  align-items: center; /* Alinha os itens horizontalmente ao centro */
+  justify-content: flex-start; /* Alinha os itens verticalmente ao início */
+  padding: 0.6vw; /* Espaçamento interno de 0.6% da largura da janela */
+  position: absolute; /* Define a posição absoluta em relação ao seu contêiner pai */
+  top: 63%; /* Posiciona a div a 63% da altura da janela */
+  left: 50%; /* Posiciona a div a 50% da largura da janela */
+  transform: translate(-50%, -50%); /* Centraliza a div no eixo horizontal e vertical */
+  border-radius: 1vw; /* Bordas arredondadas com raio de 1% da largura da janela */
 }
 
 .gear-icon {
-  width: 2vw;
-  height: auto;
-  margin-top: 0px;
-  margin-left: 14vw;
+  width: 2vw; /* Largura do ícone de configurações de 2% da largura da janela */
+  height: auto; /* Altura automática para manter a proporção */
+  margin-top: 0px; /* Sem margem superior */
+  margin-left: 14vw; /* Margem à esquerda de 14% da largura da janela */
 }
 
 .image {
-  width: 25vw;
-  height: auto;
-  margin-top: 0.5vw;
+  width: 25vw; /* Largura da imagem de 25% da largura da janela */
+  height: auto; /* Altura automática para manter a proporção */
+  margin-top: 0.5vw; /* Margem superior de 0.5% da largura da janela */
 }
 
 .cor-label,
 .image-label {
-  font-size: 1.1vw;
-  font-family: "Inter", sans-serif;
-  color: #000;
-  margin: 0;
-  text-align: center;
-  margin-left: -12vw;
-  margin-top: 1vh;
+  font-size: 1.1vw; /* Tamanho da fonte de 1.1% da largura da janela */
+  font-family: "Inter", sans-serif; /* Define a fonte como Inter */
+  color: #000; /* Cor do texto preta */
+  margin: 0; /* Sem margens */
+  text-align: center; /* Centraliza o texto */
+  margin-left: -12vw; /* Margem negativa à esquerda de 12% da largura da janela */
+  margin-top: 1vh; /* Margem superior de 1% da altura da janela */
 }
 
 .color-overlay,
 .accessory-overlay {
-  position: relative;
-  width: 10vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative; /* Posiciona os elementos relativamente ao seu contêiner pai */
+  width: 10vw; /* Largura de 10% da largura da janela */
+  display: flex; /* Utiliza o modelo flexbox */
+  justify-content: center; /* Alinha os itens ao centro */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
 .color-images,
 .accessory-images {
-  position: absolute;
-  top: 1vh;
-  display: flex;
-  gap: 1vw;
+  position: absolute; /* Posiciona os elementos de forma absoluta */
+  top: 1vh; /* Distância de 1% da altura da janela do topo */
+  display: flex; /* Utiliza o modelo flexbox */
+  gap: 1vw; /* Espaçamento de 1% da largura da janela entre os itens */
 }
 
 .color-image,
 .accessory-image {
-  width: 1.4vw;
-  height: auto;
-  margin: 1.2vh;
+  width: 1.4vw; /* Largura de 1.4% da largura da janela */
+  height: auto; /* Altura automática para manter a proporção */
+  margin: 1.2vh; /* Margem de 1.2% da altura da janela */
 }
 
-/* Responsivo para telas menores */
+/* Responsivo */
 @media (max-width: 400px) {
   .white-rectangle-two {
-    width: 88vw; /* Mais largo em telas pequenas */
-    height: 16vh; /* Altura proporcional baseada na altura da tela */
-    padding: 2vw;
-    border-radius: 2vw; /* Arredondamento suave */
-    top: 88%; /* Desce mais */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%);
-  }
-
-  /* Contêiner para alinhar o ícone e o texto */
-  .label-container {
-    display: flex;
-    align-items: center; /* Alinha verticalmente os itens (ícone e texto) */
-    justify-content: center; /* Centraliza horizontalmente */
-    gap: 1vw; /* Espaço entre o ícone e o texto */
+    width: 88vw; /* Aumenta a largura para 88% da largura da janela em telas pequenas */
+    height: 16vh; /* Reduz a altura para 16% da altura da janela */
+    padding: 2vw; /* Aumenta o padding para 2% da largura da janela */
+    border-radius: 2vw; /* Aumenta o raio da borda para 2% da largura da janela */
+    top: 88%; /* Move a div para 88% da altura da janela */
+    left: 50%; /* Mantém a posição a 50% da largura da janela */
+    transform: translate(-50%, -50%); /* Mantém o centro relativo */
   }
 
   .gear-icon {
-    width: 3vw; /* Ajuste o tamanho do ícone */
-    height: auto;
+    width: 3vw; /* Aumenta a largura do ícone para 3% da largura da janela */
   }
 
   .cor-label,
   .image-label {
-    font-size: 3vw; /* Aumenta o tamanho da fonte */
-    margin: 0;
+    font-size: 3vw; /* Aumenta o tamanho da fonte para 3% da largura da janela */
   }
 
   .image {
-    width: 39vw; /* Aumenta o tamanho da imagem */
-    margin-top: 0.5vh;
+    width: 39vw; /* Aumenta a largura da imagem para 39% da largura da janela */
+    margin-top: 0.5vh; /* Mantém a margem superior de 0.5% da altura da janela */
   }
 
   .color-overlay,
   .accessory-overlay {
-    width: 15vw; /* Aumenta a largura dos overlays */
+    width: 15vw; /* Aumenta a largura do contêiner para 15% da largura da janela */
   }
 
   .color-images,
   .accessory-images {
-    gap: 1vw; /* Aumenta o espaçamento entre as imagens */
+    gap: 1vw; /* Mantém o espaçamento de 1% da largura da janela entre os itens */
   }
 
   .color-image,
   .accessory-image {
-    width: 3vw; /* Aumenta o tamanho das imagens */
-    margin: 1vh;
+    width: 3vw; /* Aumenta a largura das imagens para 3% da largura da janela */
+    margin: 1vh; /* Aumenta a margem para 1% da altura da janela */
   }
 }

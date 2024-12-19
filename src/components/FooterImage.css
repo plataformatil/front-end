@@ -1,13 +1,15 @@
+/* Estilos para o ícone de ajuda */
 .ajuda-image {
-  position: fixed;
-  bottom: 2vw; /* Ajuste de 20px para 2% da largura da tela */
-  right: 5vw;  /* Ajuste de 70px para 7% da largura da tela */
-  height: auto;
-  z-index: 0;
+  position: fixed; /* Posiciona o elemento de forma fixa na tela, ou seja, ele fica na mesma posição enquanto a página é rolada */
+  bottom: 2vw; /* Define a distância do ícone em relação ao fundo da tela, usando 2% da largura da tela (viewport width) */
+  right: 5vw; /* Define a distância do ícone em relação à direita da tela, usando 5% da largura da tela (viewport width) */
+  height: auto; /* Mantém a altura da imagem proporcional à largura */
+  z-index: 0; /* Define a camada do elemento. O valor 0 coloca o elemento atrás de outros elementos com valores de z-index maiores */
 }
 
+/* Estilos para telas pequenas, usando a media query */
 @media (max-width: 342px), (max-height: 556px) {
   .ajuda-image {
-    display: none; /* Esconde o elemento */
+    display: none; /* Esconde o ícone de ajuda em telas pequenas (largura <= 342px ou altura <= 556px) */
   }
 }

@@ -1,51 +1,54 @@
+/* Estilo para o retângulo branco à direita */
 .right-white-rectangle {
-  width: 16vw;
-  height: 43vh;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  position: fixed;
-  right: 23vw;
-  top: 71%;
-  transform: translateY(-50%);
-  padding: 2vh;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 1vh;
+  width: 16vw; /* Largura do retângulo em relação à largura da tela */
+  height: 43vh; /* Altura do retângulo em relação à altura da tela */
+  background-color: white; /* Cor de fundo do retângulo */
+  display: flex; /* Flexbox para alinhamento e distribuição dos itens */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: center; /* Alinha os itens no centro horizontalmente */
+  justify-content: space-around; /* Distribui os itens com espaço ao redor */
+  position: fixed; /* Fixa a posição do retângulo na tela */
+  right: 23vw; /* Posiciona o retângulo 23% da largura da tela a partir da direita */
+  top: 71%; /* Posiciona o retângulo 71% da altura da tela a partir do topo */
+  transform: translateY(-50%); /* Ajusta o retângulo para ficar centrado verticalmente */
+  padding: 2vh; /* Espaçamento interno do retângulo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para o retângulo */
+  border-radius: 1vh; /* Bordas arredondadas */
 }
 
+/* Estilo para os botões laranja dentro do retângulo */
 .orange-button {
-  width: 99%;
-  height: 10vh;
-  background-color: #f46720;
-  border-radius: 0.5vh;
-  margin: 0.6vh 0;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 0.5vw;
+  width: 99%; /* Largura quase total do retângulo */
+  height: 10vh; /* Altura do botão */
+  background-color: #f46720; /* Cor de fundo do botão (laranja) */
+  border-radius: 0.5vh; /* Bordas arredondadas do botão */
+  margin: 0.6vh 0; /* Margem vertical entre os botões */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  display: flex; /* Flexbox para alinhar os itens dentro do botão */
+  flex-direction: row; /* Alinha os itens horizontalmente */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  padding: 0 0.5vw; /* Espaçamento horizontal dentro do botão */
 }
 
+/* Estilo para o primeiro texto dentro do botão */
 .text1 {
-  font-size: 0.8vw;
-  font-weight: bold;
-  color: white;
-  margin-right: auto;
+  font-size: 0.8vw; /* Tamanho da fonte em relação à largura da tela */
+  font-weight: bold; /* Deixa o texto em negrito */
+  color: white; /* Cor do texto (branco) */
+  margin-right: auto; /* Margem à direita automática para empurrar os itens para a esquerda */
 }
 
+/* Estilo para o segundo texto dentro do botão */
 .text2 {
-  font-size: 0.6vw;
-  color: white;
-  margin-left: 1vw;
+  font-size: 0.6vw; /* Tamanho da fonte em relação à largura da tela */
+  color: white; /* Cor do texto (branco) */
+  margin-left: 1vw; /* Margem à esquerda para separar do primeiro texto */
 }
 
-/* Responsivo - Ocultar .right-white-rectangle em telas pequenas */
+/* Media query para tornar o retângulo direito invisível em telas muito pequenas */
 @media (max-width: 350.84px), (max-height: 217px) {
   .right-white-rectangle {
-    display: none; /* Oculta o elemento */
+    display: none; /* Oculta o retângulo em telas pequenas */
   }
 }
-

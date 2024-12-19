@@ -1,91 +1,91 @@
 .user-greeting {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-  font-size: 1.1em;
-  position: relative;
+  display: flex; /* Usando flexbox para layout */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  gap: 1vw; /* Define o espaço entre os itens em 1% da largura da tela */
+  font-size: 1.1em; /* Define o tamanho da fonte como 1.1 vezes o tamanho base */
+  position: relative; /* A posição é relativa para o posicionamento de filhos absolutos */
 }
 
 .user-greeting-text {
-  position: absolute;
-  top: 4vw;
-  left: 16vw;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  font-size: 7vh;
-  color: #ffffff;
+  position: absolute; /* Posiciona o texto de forma absoluta em relação ao elemento pai */
+  top: 4vw; /* Distância do topo, 4% da largura da tela */
+  left: 16vw; /* Distância da esquerda, 16% da largura da tela */
+  font-family: "Inter", sans-serif; /* Fonte usada no texto */
+  font-weight: bold; /* Define o texto como negrito */
+  font-size: 7vh; /* Tamanho da fonte em 7% da altura da tela */
+  color: #ffffff; /* Cor do texto branca */
 }
 
 .profile-button {
-  position: absolute;
-  top: 10vh;
-  left: 58vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2vw;
-  padding: 0,8vh 1.2vw;
-  width: 19vw;
-  height: 7vh;
-  border: 0.1vh solid white;
-  background-color: transparent;
-  color: white;
-  border-radius: 0.5vh;
-  cursor: pointer;
-  font-size: 3vh;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
+  position: absolute; /* Posiciona o botão de forma absoluta */
+  top: 10vh; /* Distância do topo da tela, 10% da altura da tela */
+  left: 58vw; /* Distância da esquerda, 58% da largura da tela */
+  display: flex; /* Flexbox para o layout do botão */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: center; /* Alinha os itens horizontalmente no centro */
+  gap: 2vw; /* Define um espaço de 2% da largura entre os itens */
+  padding: 0,8vh 1.2vw; /* Define o padding como 0.8% da altura e 1.2% da largura */
+  width: 19vw; /* Largura do botão, 19% da largura da tela */
+  height: 7vh; /* Altura do botão, 7% da altura da tela */
+  border: 0.1vh solid white; /* Borda branca com espessura de 0.1% da altura da tela */
+  background-color: transparent; /* Fundo transparente */
+  color: white; /* Cor do texto branca */
+  border-radius: 0.5vh; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  font-size: 3vh; /* Tamanho da fonte do texto no botão, 3% da altura da tela */
+  font-family: "Inter", sans-serif; /* Fonte usada no texto do botão */
+  font-weight: bold; /* Define o texto como negrito */
 }
 
 .profile-button .icon {
-  font-size: 1em;
+  font-size: 1em; /* Define o tamanho do ícone dentro do botão */
 }
 
 /* Estilos gerais */
 .hamburger-menu {
-  position: absolute;
-  right: 2vw; /* Coloca o hambúrguer no lado direito */
-  top: 2vh; /* Ajuste a altura conforme necessário */
-  cursor: pointer;
+  position: absolute; /* Posiciona o menu de hambúrguer de forma absoluta */
+  right: 2vw; /* Coloca o ícone do hambúrguer a 2% da largura da tela da direita */
+  top: 2vh; /* Distância do topo, 2% da altura da tela */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
   display: none; /* Esconde o hambúrguer por padrão */
 }
 
 .hamburger-icon {
-  font-size: 1em;
-  color: white;
+  font-size: 1em; /* Tamanho do ícone de hambúrguer */
+  color: white; /* Cor do ícone */
 }
 
 /* Menu Lateral */
 .side-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: absolute; /* Posiciona o menu lateral de forma absoluta */
+  top: 0; /* Fica no topo da tela */
+  right: 0; /* Fica na direita da tela */
   width: 250px; /* Largura do menu lateral */
-  height: 100%;
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  height: 100%; /* Altura 100% da tela */
+  background-color: #333; /* Cor de fundo escura */
+  color: white; /* Cor do texto branca */
+  padding: 20px; /* Padding interno */
+  display: flex; /* Flexbox para layout do menu */
+  flex-direction: column; /* Coloca os itens na vertical */
+  gap: 20px; /* Espaçamento de 20px entre os itens */
 }
 
 .side-menu ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o padding */
 }
 
 .side-menu li {
-  cursor: pointer;
-  font-size: 1.2em;
-  transition: background-color 0.3s;
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse sobre os itens */
+  font-size: 1.2em; /* Tamanho da fonte */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 
 .side-menu li:hover {
-  background-color: #444;
+  background-color: #444; /* Altera a cor do fundo ao passar o mouse */
 }
 
-/* Media query para telas pequenas - exibe o hambúrguer e oculta o botão de configurações */
+/* Media query para telas pequenas */
 @media (max-width: 421px) {
   .hamburger-menu {
     display: block; /* Exibe o hambúrguer em telas pequenas */
@@ -100,24 +100,24 @@
   }
 }
 
-
 /* Para larguras menores */
 @media (max-width: 421px) {
   .profile-button {
-    display: none !important;
+    display: none !important; /* Esconde o botão de perfil em telas pequenas */
   }
 }
 
 /* Para alturas menores */
 @media (max-height: 90px) {
   .profile-button {
-    display: none !important;
+    display: none !important; /* Esconde o botão de perfil em telas muito pequenas */
   }
 }
 
+/* Para ajustar a saudação do usuário em telas pequenas */
 @media (max-width: 421px) {
   .user-greeting-text {
-    font-size: 4vh; /* Menor fonte para telas pequenas */
-    left: 5vw; /* Ajuste para mover mais para a esquerda */
+    font-size: 4vh; /* Diminui o tamanho da fonte em telas pequenas */
+    left: 5vw; /* Move o texto mais para a esquerda */
   }
 }

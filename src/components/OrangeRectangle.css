@@ -1,87 +1,93 @@
+/* Estilo para o retângulo laranja */
 .orange-rectangle {
-  display: flex;
-  flex-direction: column;
-  background-color: #f46720;
-  width: 10vw;
-  height: 61vh;
-  align-items: center;
-  justify-content: space-around;
-  padding: 1.3vh;
-  margin-top: 21vh;
-  margin-left: 16vw;
-  position: relative;
-  border-radius: 1vh;
+  display: flex; /* Utiliza flexbox para organizar os itens dentro do retângulo */
+  flex-direction: column; /* Organiza os itens de forma vertical */
+  background-color: #f46720; /* Cor de fundo laranja */
+  width: 10vw; /* Largura do retângulo em 10% da largura da tela */
+  height: 61vh; /* Altura do retângulo em 61% da altura da tela */
+  align-items: center; /* Alinha os itens ao centro do retângulo */
+  justify-content: space-around; /* Distribui os itens com espaçamento igual */
+  padding: 1.3vh; /* Espaçamento interno em 1.3% da altura da tela */
+  margin-top: 21vh; /* Espaçamento superior de 21% da altura da tela */
+  margin-left: 16vw; /* Espaçamento à esquerda de 16% da largura da tela */
+  position: relative; /* Posiciona o retângulo relativo ao seu contêiner */
+  border-radius: 1vh; /* Bordas arredondadas */
 }
 
+/* Estilo para os quadrados dentro do retângulo laranja */
 .square {
-  width: 8vw;
-  height: 20vh;
-  background-color: white;
-  margin-top: 4vh;
-  border-radius: 1vh;
+  width: 8vw; /* Largura dos quadrados em 8% da largura da tela */
+  height: 20vh; /* Altura dos quadrados em 20% da altura da tela */
+  background-color: white; /* Cor de fundo branca para os quadrados */
+  margin-top: 4vh; /* Espaçamento superior de 4% da altura da tela */
+  border-radius: 1vh; /* Bordas arredondadas */
 }
 
+/* Estilo para os textos dentro dos quadrados */
 .square p {
-  color: #f46720;
-  margin: 0;
-  text-align: center;
+  color: #f46720; /* Cor do texto em laranja */
+  margin: 0; /* Remove as margens padrão do parágrafo */
+  text-align: center; /* Alinha o texto ao centro */
 }
 
+/* Estilo para o primeiro parágrafo dentro dos quadrados */
 .square p:first-child {
-  margin-bottom: 1vh;
-  font-size: 1.5vh;
+  margin-bottom: 1vh; /* Espaçamento abaixo do primeiro parágrafo */
+  font-size: 1.5vh; /* Tamanho da fonte do primeiro parágrafo */
 }
 
+/* Estilo para o segundo parágrafo dentro dos quadrados */
 .square p:last-child {
-  font-size: 2vh;
+  font-size: 2vh; /* Tamanho da fonte do segundo parágrafo */
 }
 
+/* Estilos responsivos para telas menores */
 @media (max-width: 350.84px), (max-height: 217px) {
   .orange-rectangle {
-    display: flex;
-    flex-direction: row; /* Alinha os quadrados lado a lado */
-    flex-wrap: nowrap; /* Permite que os quadrados quebrem para a linha seguinte, se necessário */
+    display: flex; /* Exibe os itens como flexbox */
+    flex-direction: row; /* Alinha os itens lado a lado */
+    flex-wrap: nowrap; /* Não permite quebra de linha */
     justify-content: space-between; /* Espaçamento igual entre os quadrados */
     align-items: center; /* Alinha os itens ao centro */
-    background-color: #f46720;
-    border-radius: 1vh;
-    width: 90%; /* Ajusta a largura do retângulo */
-    height: auto;
-    padding: 1.5vh;
-    margin: 0 auto;
-    margin-top: 10vh;
+    background-color: #f46720; /* Mantém a cor de fundo laranja */
+    border-radius: 1vh; /* Bordas arredondadas */
+    width: 90%; /* Ajusta a largura do retângulo para 90% da largura da tela */
+    height: auto; /* Ajusta a altura automaticamente */
+    padding: 1.5vh; /* Ajusta o espaçamento interno */
+    margin: 0 auto; /* Centraliza o retângulo */
+    margin-top: 10vh; /* Ajusta o espaçamento superior */
   }
 
-  /* Estilo para o título "Resumo semanal" */
+  /* Estilo para o título dentro do retângulo laranja */
   .orange-rectangle > .resumo-semanal {
-    text-align: center;
-    font-size: 1.5vh; /* Fonte menor */
-    font-weight: bold;
-    color: white;
-    margin-bottom: 2vh; /* Espaço abaixo do título */
-    width: 100%; /* Garante que o título ocupe a largura toda */
+    text-align: center; /* Alinha o título ao centro */
+    font-size: 1.5vh; /* Tamanho da fonte menor */
+    font-weight: bold; /* Deixa o título em negrito */
+    color: white; /* Cor do título em branco */
+    margin-bottom: 2vh; /* Espaçamento abaixo do título */
+    width: 100%; /* Garante que o título ocupe a largura total */
   }
 
-  /* Estilo para os quadrados brancos */
+  /* Estilo para os quadrados brancos dentro do retângulo */
   .square {
     width: 20%; /* Ajusta os quadrados para ficarem lado a lado */
-    min-width: 50px; /* Impede que fiquem muito estreitos */
+    min-width: 50px; /* Impede que os quadrados fiquem muito estreitos */
     height: 12vh; /* Define a altura dos quadrados */
-    background-color: white;
-    margin: 0.4vh; /* Espaço entre os quadrados */
-    border-radius: 0.5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1vh;
+    background-color: white; /* Cor de fundo dos quadrados */
+    margin: 0.4vh; /* Espaçamento entre os quadrados */
+    border-radius: 0.5vh; /* Bordas arredondadas */
+    display: flex; /* Exibe os itens como flexbox */
+    flex-direction: column; /* Organiza os itens dentro dos quadrados de forma vertical */
+    justify-content: center; /* Alinha os itens ao centro do quadrado */
+    align-items: center; /* Alinha os itens ao centro do quadrado */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 1vh; /* Espaçamento interno nos quadrados */
   }
 
   /* Ajuste nos textos dentro dos quadrados */
   .square p {
-    margin: 0.2vh 0;
-    font-size: 1.5vh;
-    color: #f46720;
+    margin: 0.2vh 0; /* Ajusta as margens do texto */
+    font-size: 1.5vh; /* Tamanho da fonte ajustado */
+    color: #f46720; /* Cor do texto em laranja */
   }
 }
